@@ -1,0 +1,50 @@
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main">
+    <a routerLink="/" class="brand" (click)="close()">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">{{ p.name }}</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      type="button"
+      (click)="toggle()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Toggle navigation menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" [class.open]="menuOpen()">
+      @for (l of links; track l.path) {
+        <li>
+          <a
+            [routerLink]="l.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: l.exact }"
+            (click)="close()"
+            >{{ l.label }}</a
+          >
+        </li>
+      }
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© {{ year }} {{ p.name }}. Built with Angular.</p>
+    <div class="footer-links">
+      <a [href]="p.github" target="_blank" rel="noopener">GitHub</a>
+      <a [href]="p.linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      <a [href]="p.leetcode" target="_blank" rel="noopener">LeetCode</a>
+      <a [href]="'mailto:' + p.email">Email</a>
+    </div>
+  </div>
+</footer>
