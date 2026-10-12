@@ -24,14 +24,3 @@ Colours are CSS variables at the top of **`src/styles.scss`**.
 npm run build      # output: dist/nitika-portfolio/browser
 ```
 
-## Deploy
-
-### Vercel
-1. Push this folder to a GitHub repo.
-2. Vercel > Add New Project > import the repo. `vercel.json` already sets the build command, output folder and the SPA rewrite, so just click Deploy.
-
-### Netlify
-1. Push to GitHub, then Netlify > Add new site > Import from Git.
-2. `netlify.toml` already sets the build command, publish folder and the SPA redirect. Click Deploy.
-
-(Or drag-and-drop the `dist/nitika-portfolio/browser` folder onto https://app.netlify.com/drop after `npm run build`.)

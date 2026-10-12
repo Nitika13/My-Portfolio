@@ -38,7 +38,7 @@ import { PROFILE, PROJECTS, STATS } from '../data';
         </div>
         <div class="float-card card-b">
           <strong>Applied AI</strong>
-          <span>RAG · LLMs · Speech</span>
+          <span>ML · LLMs · Speech</span>
         </div>
       </div>
     </section>
