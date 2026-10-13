@@ -50,11 +50,12 @@ export const EXPERIENCE: Job[] = [
     period: 'Jan 2026 – Jun 2026',
     place: 'Noida, India',
     points: [
-      // 'Designed 4 REST APIs using ASP.NET Core, C#, Entity Framework Core and SQL Server, and engineered an algorithm to automate mentor allotment, eliminating a manual process.',
-      // 'Built responsive frontend interfaces with React and TypeScript, using Redux for state management. Worked with Git and Azure DevOps for feature-branch development, code reviews and CI/CD, with Kubernetes for containerized deployment.',
-      // 'Built a Python / FastAPI AI moderation service for Microsoft Teams and an embeddable web widget, exposing 10+ REST APIs to support core backend workflows.',
-      // 'Orchestrated a 2-agent Azure AI Foundry workflow with hybrid RAG on Azure AI Search, combining keyword and vector retrieval with semantic reranking to supply up to 5 relevant text chunks as context for each generated response.',
-    ],
+      'Learned to work like a team and build stuff used by real people.',
+      'The skill I sharpened: thinking in full stack, from SQL tables to React screens to backend APIs.',
+      'The tech I got to try: AI agents and Azure, which went well beyond coursework.',
+      'The habit I picked up: clean teamwork with feature branches, reviews and pipelines.',
+      'The mindset I took away: build it, ship it, then make it better.',
+    ], 
     stack: [
       'ASP.NET Core',
       'C#',
